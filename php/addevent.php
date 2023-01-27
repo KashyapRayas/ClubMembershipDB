@@ -48,6 +48,7 @@ session_start();
     </div>
 
     <?php
+        $usn = $user_data['USN'];
         $display = "block";
         if($_SERVER['REQUEST_METHOD'] == 'POST')
         {
@@ -62,7 +63,7 @@ session_start();
                 $query = "UPDATE events SET STATUS='DONE'";
                 $res = mysqli_query($con, $query);
 
-                $query = "INSERT INTO events VALUES('$eventid', '$name', '$date', 'ONGOING')";
+                $query = "INSERT INTO events VALUES('$eventid', '$name', '$date', 'ONGOING', '$usn')";
                 $res = mysqli_query($con, $query);
 
                 header("Location: ../php/dashboard.php");

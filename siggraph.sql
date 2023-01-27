@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3308
--- Generation Time: Jan 27, 2023 at 01:29 PM
+-- Generation Time: Jan 27, 2023 at 05:20 PM
 -- Server version: 8.0.31
 -- PHP Version: 8.2.0
 
@@ -85,17 +85,20 @@ CREATE TABLE IF NOT EXISTS `events` (
   `EventName` varchar(50) NOT NULL,
   `Date` date NOT NULL,
   `Status` varchar(10) NOT NULL DEFAULT 'DONE',
-  PRIMARY KEY (`EventID`)
+  `AddedBy` varchar(10) NOT NULL,
+  PRIMARY KEY (`EventID`),
+  KEY `AddedBy` (`AddedBy`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `events`
 --
 
-INSERT INTO `events` (`EventID`, `EventName`, `Date`, `Status`) VALUES
-(99, 'Club Orientation', '2023-01-07', 'DONE'),
-(100, 'Understanding Graphic Design', '2023-02-12', 'DONE'),
-(2186785, 'Understanding Graphic Design', '2023-02-12', 'ONGOING');
+INSERT INTO `events` (`EventID`, `EventName`, `Date`, `Status`, `AddedBy`) VALUES
+(99, 'Club Orientation', '2023-01-07', 'DONE', '1BG20CS046'),
+(100, 'Understanding Graphic Design', '2023-02-12', 'DONE', '1BG20CS046'),
+(2186785, 'Understanding Graphic Design', '2023-02-12', 'DONE', '1BG20CS046'),
+(9919344, 'Understanding Graphic Design', '2023-02-12', 'ONGOING', '1BG20CS046');
 
 -- --------------------------------------------------------
 
