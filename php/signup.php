@@ -88,8 +88,6 @@ session_start();
                     //save to database
                     $query = "INSERT INTO `members` VALUES('$usn', '$fname', '$lname', '$email', '$pass')";
                     mysqli_query($con, $query);
-                    $query = "INSERT INTO `other_details` VALUES('$usn', 'Not Set', 'Not Set', 'Not Set', 'Visitor')";
-                    mysqli_query($con, $query);
                     header("Location: ../php/login.php");
                     die;
                 }

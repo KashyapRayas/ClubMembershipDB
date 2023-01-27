@@ -234,7 +234,11 @@ session_start();
                 <h1>Total Enrolled</h1>
                 <h3>5</h3>
             </div>
-            <a href="../php/delete.php" class="delete-cta">Delete user</a>
+            <div class="button-set">
+                <a href="../php/delete.php" class="delete-cta cta">Delete User</a>
+                <a href="../php/addrole.php" class="addrole-cta cta">Add Role</a>
+                <a href="../php/addevent.php" class="addevent-cta cta">Add Event</a>
+            </div>
         </div>
     </div>
 

@@ -397,3 +397,8 @@ body {
 .admin-card a:hover {
     background-color: #1fe148;
 }
+
+.admin-card .button-set {
+    display: flex;
+    gap: 2em;
+}

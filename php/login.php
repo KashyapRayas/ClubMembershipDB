@@ -92,7 +92,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
                 const elem = document.getElementById('group-invalid')
                 elem.style.display = '$display'
             </script>
-
         ";
     }
 }
