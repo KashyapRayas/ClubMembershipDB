@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    font-family: 'Raleway', sans-serif;
+    --bg-color: #eb2d2d;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.preloader{
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+  }
+  
+  .preloader-logo { 
+    position: relative;
+    left:50%;
+    top:50%;
+    margin: -75px 0px 0px -75px;
+    width: 150px;
+    z-index: 1001;
+  }
+
+.login-page {
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-wrapper {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.ribbon {
+    position: absolute;
+    top: 0;
+    background-color: #230658;
+    width: 100%;
+    height: 2em;
+    padding: 0;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+}
+
+.top img {
+    width: 15em;
+}
+
+.bottom {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #230658;
+    padding: 3em;
+    /* border-radius: 5%; */
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    font-weight: medium;
+    color: white;
+    gap: 0.3em;
+}
+
+#group-invalid {
+    display: none;
+    padding-top: 0.5em;
+    gap: 0.3em;
+}
+
+.invalid-text {
+    font-weight: normal;
+    color: #1fe148;
+    font-size: 0.9rem;
+}
+
+.group label {
+    padding-bottom: 0.4em;
+}
+
+.group input {
+    height: 2em;
+    border: none;
+    border-radius: 0.3em;
+}
+
+.login-group {
+    display: flex;
+    justify-content: space-between;
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: white;
+    gap: 1em;
+    padding-top: 0.9em;
+}
+
+
+.login-button {
+    width: 10em;
+    height: 3em;
+    background-color: #ffad0f;
+    border-radius: 1em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-button:hover {
+    background-color: #1fe148;
+}
