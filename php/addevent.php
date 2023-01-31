@@ -33,8 +33,8 @@ session_start();
                     <input name="ename" type="text"><span class="highlight"></span><span class="bar"></span>
                 </div>
                 <div class="group">
-                    <label>Event Date (YYYY-MM-DD):</label>
-                    <input name="edate" type="text"><span class="highlight"></span><span class="bar"></span>
+                    <label>Event Date:</label>
+                    <input name="edate" min="2023-02-02" type="date"><span class="highlight"></span><span class="bar"></span>
                 </div>
                 <div id="group-invalid">
                     <h3 class="invalid-text">An event is already ongoing!</h3>

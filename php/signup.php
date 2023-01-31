@@ -37,7 +37,7 @@ session_start();
                 </div>
                 <div class="group">
                     <label>Email ID</label>
-                    <input name="email" type="text"><span class="highlight"></span><span class="bar"></span>
+                    <input name="email" type="email"><span class="highlight"></span><span class="bar"></span>
                 </div>
                 <div class="group">
                     <label>USN</label>
